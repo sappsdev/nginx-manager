@@ -11,7 +11,7 @@ services:
       DB_MYSQL_HOST: "sapps_proxy_db"
       DB_MYSQL_PORT: 3306
       DB_MYSQL_USER: "sapps"
-      DB_MYSQL_PASSWORD: "Vct210213"
+      DB_MYSQL_PASSWORD: "password123"
       DB_MYSQL_NAME: "npm"
       # Uncomment this if IPv6 is not enabled on your host
       # DISABLE_IPV6: 'true'
@@ -25,10 +25,10 @@ services:
     image: 'jc21/mariadb-aria:latest'
     restart: unless-stopped
     environment:
-      MYSQL_ROOT_PASSWORD: 'Vct210213'
+      MYSQL_ROOT_PASSWORD: 'password123'
       MYSQL_DATABASE: 'npm'
       MYSQL_USER: 'sapps'
-      MYSQL_PASSWORD: 'Vct210213'
+      MYSQL_PASSWORD: 'password123'
     volumes:
       - ./data/mysql:/var/lib/mysql
 
